@@ -21,7 +21,7 @@ RUN apt-get update && apt-get install -y \
     && apt-get update && apt-get install -y docker-ce docker-ce-cli containerd.io
 
 # Set up Docker to run without sudo
-RUN groupadd docker && usermod -aG docker root
+# RUN groupadd docker && usermod -aG docker root
 
 # Set the default command
 CMD ["echo", "Angular 18 and Docker installed"]
