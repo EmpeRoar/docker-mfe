@@ -20,6 +20,8 @@ RUN apt-get update && apt-get install -y \
     && add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" \
     && apt-get update && apt-get install -y docker-ce docker-ce-cli containerd.io
 
+# RUN groupadd docker && usermod -aG docker root
+
 # Install PowerShell
 RUN apt-get update && apt-get install -y wget \
     && wget https://packages.microsoft.com/config/ubuntu/22.04/packages-microsoft-prod.deb \
